@@ -1,33 +1,24 @@
-FROM nikolaik/python-nodejs:latest
+FROM node:16.13.0
 
 RUN apt-get update && \
   apt-get install -y \
   neofetch \
-  chromium \
   ffmpeg \
-  webp \
   wget \
-  mc \
+  chromium \ 
   imagemagick && \
   rm -rf /var/lib/apt/lists/*
 
-COPY package.json . 
-#RUN npm install
-#RUN npm install @adiwajshing/baileys@3.5.3 
-#RUN npm audit fix
-#RUN npm install -g npm-check-updates
-#RUN ncu --upgrade
-#RUN npm install libwebp
+COPY package.json .
+RUN npm install -g npm@latest
+RUN npm install 
+RUN npm instal pm2 -g
+RUN npm install ytdl-core@latest
+RUN npm install yt-search@latest
+ENV PM2_PUBLIC_KEY r5nhytflswo1ly3
+ENV PM2_SECRET_KEY cygkc3bz1dww20f
 
-RUN mkdir /Alphab0t10
-WORKDIR /Alphab0t10
-COPY . /Alphab0t10
-RUN python3 -m pip install -r /Alphab0t10/requirements.txt
-ENV TZ=Asia/Jakarta
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-
-RUN ls
-
+COPY . .
 EXPOSE 5000
 
-CMD ["npm", "start"]
+CMD ["pm2-runtime", "zeeone.js"]`
