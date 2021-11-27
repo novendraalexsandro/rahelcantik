@@ -21,8 +21,7 @@ return `「 *PRICE LIST* 」
 
 
 NOTE : 
-Bot On 24 Jam Karna Di Run Menggunakan Heroku
-Reset Data Setiap Jam 23:00 `
+Bot On 24 Jam Karna Di Run menggunakan rdp `
 	}
 
 exports.pc_sewa = pc_sewa
