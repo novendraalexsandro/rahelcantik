@@ -1,20 +1,16 @@
 #!/usr/bin/bash
 
-pkg update -y
-pkg upgrade -y
-pkg install git -y
-pkg install tty-clock -y
-pkg install sox -y
-pkg install jq -y
-pkg install figlet -y
-pkg install toilet -y
-pkg install wget -y
-pkg install imagemagick -y
-pkg install ffmpeg -y
-pkg install webp
-pkg install libwebp -y
-pkg install tesseract -y
-pkg install nmap
+apt update -y
+apt upgrade -y
+apt install git -y
+apt install tty-clock -y
+apt install sox -y
+apt install jq -y
+apt install figlet -y
+apt install toilet -y
+apt install libwebp -y
+apt install tesseract -y
+apt install nmap
 wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata?raw=true"
 npm i pm2 -g
 pm2 install ffmpeg 
@@ -26,4 +22,4 @@ tty-clock -s -S -x -c -C 2 -b -B
 clear
 pm2 start zeeone.js
 pm2 save
-pm2 monit
+pm2 logs
