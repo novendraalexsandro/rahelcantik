@@ -1820,7 +1820,7 @@ const checkWin = (sender) => {
     }
     if (isGroup && !mek.key.fromMe && isAntiLink && !isGroupAdmins && !isOwner && !isCreator && isBotGroupAdmins){
             if (chatxs.match(/(https:\/\/chat.whatsapp.com)/gi)) {
-                reply2(`「 G R O U P  L I N K  D E T E C T O R 」\n\nSepertinya kamu mengirimkan link grup, maaf kamu akan di kick`)
+                reply2(`「 G R O U P L I N K D E T E C T O R 」\n\nSepertinya kamu mengirimkan link grup, maaf kamu akan di kick`)
                 alpha.groupRemove(from, [sender])
             }
         }
@@ -2194,7 +2194,7 @@ let papako = [{
 											},
 										"type": "RESPONSE"
 										}]
-								sendButLocation(from, teks , `Thank for verification 💋\n${botname}™© | By ${ownername}`,pp_userz, papako, {contextInfo: { mentionedJid: [sender]}})
+								sendButLocation(from, teks , `Thank for verification 🗿\n${botname}™© | By ${ownername}`,pp_userz, papako, {contextInfo: { mentionedJid: [sender]}})
                 break
 	case 'menu': case 'help':
 			try {
@@ -3043,9 +3043,9 @@ case 'bcgif':
 					"displayName": `${ini_list.length} kontak`,
 					"contacts": ini_list 
 					}, 'contactsArrayMessage', { quoted: fkontak})
-					var ini_gopayy =`Halo @${sender.split("@")[0]} itu owner ku, jangan lupa donasi kak😇`
+					var ini_gopayy =`Halo @${sender.split("@")[0]} itu owner ku, Orang nya Baek dan ganteng kak😇`
 var buttonss = [
-{buttonId: 'donasi_kak', buttonText:{displayText: 'Donasi'}, type: 1},
+{buttonId: 'verify', buttonText:{displayText: 'verify'}, type: 1},
 {buttonId: 'sewa_kak', buttonText:{displayText: 'Sewa'}, type: 1}
 ]
 
@@ -4639,7 +4639,7 @@ break*/
                    F = q
                    reply(lang.wait())
                    tfire = await getBuffer(`${ApiZeks}/api/tfire?text=${F}&apikey=${zeksApikey}`)                   
-                   tfirep = `${lang.success()}\n\nPlease Subscribe https://youtu.be/w4iQ4rwA0mo`
+                   tfirep = `${lang.success()}\n\nSemoga Hari Mu Menyenangkan`
                    sendImageMaker(tfire, tfirep, sender)
                    break  
        case 'ytgold':  
@@ -4647,7 +4647,7 @@ break*/
                    F = q
                    reply(lang.wait())
                    ytgold = await getBuffer(`${ApiZeks}/api/gplaybutton?text=${F}&apikey=${zeksApikey}`)
-                   ytgoldp = `${lang.success()}\n\nPlease Subscribe https://youtu.be/w4iQ4rwA0mo`
+                   ytgoldp = `${lang.success()}\n\nSemoga Hari Mu Menyenangkan`
                    sendImageMaker(ytgold, ytgoldp, sender)
                    break  
        case 'ytsilver':  
@@ -4655,7 +4655,7 @@ break*/
                    F = q
                    reply(lang.wait())
                    ytsilver = await getBuffer(`${ApiZeks}/api/splaybutton?text=${F}&apikey=${zeksApikey}`)
-                   ytsilverp = `${lang.success()}\n\nPlease Subscribe https://youtu.be/w4iQ4rwA0mo`
+                   ytsilverp = `${lang.success()}\n\nSemoga Hari Mu Menyenangkan`
                    sendImageMaker(ytsilver, ytsilverp, sender)
                    break  
        case 't3d':  
